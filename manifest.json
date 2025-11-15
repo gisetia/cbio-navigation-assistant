@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "cBioPortal Navigation Assistant",
+  "version": "0.1.0",
+  "description": "Displays navigation guidance on cbioportal.org when enabled via the extension popup.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.cbioportal.org/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.cbioportal.org/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "cBioPortal Tutorials Assistant",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "tutorials/*.md"
+      ],
+      "matches": [
+        "*://*.cbioportal.org/*"
+      ]
+    }
+  ]
+}
