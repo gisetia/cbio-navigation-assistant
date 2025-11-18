@@ -1,0 +1,4 @@
+# Purpose and Scope of cBioPortal
+What the interface is designed to answer—and what it is not
+
+cBioPortal’s user interface is designed specifically for exploring and analyzing cancer genomics data contained in the studies hosted on the platform. It is intended for queries that involve examining mutations, copy-number changes, gene expression, clinical attributes, sample cohorts, and cross-study comparisons derived directly from these datasets. The portal is not meant for answering general cancer biology or oncology knowledge questions, and it should not be used to make clinical decisions or guide patient care. It also does not provide detailed experimental protocols or the exact scientific conclusions drawn by the authors of each study; instead, it offers interactive access to the underlying data so that you can perform your own exploratory analysis and generate data-driven insights.

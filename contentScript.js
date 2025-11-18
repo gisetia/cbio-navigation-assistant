@@ -11,6 +11,22 @@ const DEFAULT_APPLIED_KEY = "cbioTutorialsDefaultApplied";
 
 const instructionConfigs = [
   {
+    appliesTo: ["home", "/"],
+    markdownPath: "tutorials/home.md"
+  },
+  {
+    appliesTo: ["home", "/"],
+    markdownPath: "tutorials/disclaimer.md"
+  },
+  {
+    appliesTo: ["study"],
+    markdownPath: "tutorials/study.md"
+  },
+  {
+    appliesTo: ["study/summary"],
+    markdownPath: "tutorials/study-summary.md"
+  },
+  {
     appliesTo: ["results/comparison/overlap"],
     markdownPath: "tutorials/results-comparison-overlap.md"
   },
@@ -23,10 +39,9 @@ const instructionConfigs = [
     markdownPath: "tutorials/navigation-tips.md"
   },
   {
-    appliesTo: ["global"],
+    appliesTo: ["home", "/"],
     markdownPath: "tutorials/tutorials-overview.md"
   }
-
 ];
 
 const fallbackInstructions = {
